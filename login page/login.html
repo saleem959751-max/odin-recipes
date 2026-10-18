@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="image">
+        <img src="images/halie-west-25xggax4bSA-unsplash.jpg" width="650px" alt="">
+        <div class="letter">
+            <img src="images/odin-lined (1) (1).jpg" width="150px" alt="odin">
+            <h1>ODIN</h1>
+        </div>
+    </div>
+    <div class="message">
+        <h1>This is not a real online service! You know you need something like this in your life to help you realize
+            your deepest dreams. Sign up now to get started.
+        </h1>
+        <h2>You know you want to.</h2>
+    </div>
+    <div class="contained">
+        <form action="#" method="get" onsubmit="return validateform()">
+            <div class="rows">
+                <label>FIRST NAME</label>
+                <input type="text" name="FIRST NAME" id="FIRST NAME" required>
+            </div>
+            <div class="rows">
+
+                <label>SECOND NAME</label>
+                <input type="text" name="SECOND NAME" id="SECOND NAME" required><br><br>
+            </div>
+            <div class="rows">
+
+                <label>EMAIL</label>
+                <input type="email" name="EMAIL" required>
+            </div>
+            <div class="rows">
+                <label>PHONE NUMBER</label>
+                <input type="tel" name="PHONE NUMBER" pattern="[0-9]{10}" placeholder="1234567890" required><br><br>
+            </div>
+            <div class="rows">
+                <label>PASSWORD</label>
+                <input type="password" name="PASSWORD" id="PASSWORD" required>
+            </div>
+            <div class="rows">
+                <label>CONFIRM PASSWORD</label>
+                <input type="password" name="CONFIRM PASSWORD" id="CONFIRM PASSWORD" required><br><br>
+            </div>
+            <button type="submit">CREATE ACCOUNT</button>
+        </form>
+    </div>
+    <script>
+        function validateform() {
+            var p = document.getElementById("PASSWORD").value;
+            var c = document.getElementById("CONFIRM PASSWORD").value;
+            if (!p) {
+                alert("password requird");
+                return false;
+            }
+            if (p !== c) {
+                alert("password must be same");
+                return false;
+            }
+            return true;
+        }
+
+    </script>
+    <p class="log">Already have an account? <a href="#">Log in</a></p>
+
+</body>
+
+</html>

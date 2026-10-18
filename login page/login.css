@@ -1,0 +1,58 @@
+.letter{
+    opacity: 0.7;
+  background-color: black;
+  opacity: 0.8;
+  border: 1px solid black;
+  position: relative;
+  bottom: 660px;
+  font-size: 35px;
+  color: white;
+  width: 650px;
+  height: 200px;
+  h1{
+    position: relative;
+    left:300px;
+    bottom: 200px;
+  }
+  img{
+    position:relative;
+    left: 160px;
+  }
+}
+.message{
+  width: 899px;
+  background-color: rgb(241, 234, 234);
+  position:relative;
+  bottom: 999px;
+  left: 650px;
+}
+
+form{
+   width: 900px;
+  position:relative;
+  bottom: 950px;
+  left: 690px;
+}
+.rows{
+  width: 500px;
+  height: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr ;
+}
+button{
+  background-color: darkgreen;
+  padding: 15px;
+  color: whitesmoke;
+}
+.log{
+  width: 899px;
+  position:relative;
+  bottom: 900px;
+  left: 690px;
+
+}
+button:hover{
+    cursor:grab;
+    background-color: gray;
+}
